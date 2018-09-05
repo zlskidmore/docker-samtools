@@ -1,2 +1,2 @@
 # docker-samtools
-Samtools docker container instructions
+Samtools docker image instructions
