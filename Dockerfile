@@ -1,5 +1,5 @@
 # work from latest LTS ubuntu release
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # set the environment variables
 ENV samtools_version 1.9
@@ -15,7 +15,9 @@ RUN apt-get update -y && apt-get install -y \
     libncursesw5-dev \
     libnss-sss \
     libbz2-dev \
-    liblzma-dev
+    liblzma-dev \
+    vim \
+    less
 
 # download the suite of tools
 ADD https://github.com/samtools/samtools/releases/download/${samtools_version}/samtools-${samtools_version}.tar.bz2 /usr/bin/
