@@ -2,9 +2,9 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV samtools_version 1.9
-ENV bcftools_version 1.9
-ENV htslib_version 1.9
+ENV samtools_version 1.10
+ENV bcftools_version 1.10
+ENV htslib_version 1.10
 
 # run update and install necessary packages
 RUN apt-get update -y && apt-get install -y \
@@ -18,7 +18,7 @@ RUN apt-get update -y && apt-get install -y \
     liblzma-dev \
     vim \
     less \
-    ibcurl4-openssl-dev \
+    libcurl4-openssl-dev \
     wget
 
 # download the suite of tools
