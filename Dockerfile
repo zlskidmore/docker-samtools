@@ -2,9 +2,9 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV samtools_version 1.10
-ENV bcftools_version 1.10
-ENV htslib_version 1.10
+ENV samtools_version 1.15.1
+ENV bcftools_version 1.15.1
+ENV htslib_version 1.15.1
 
 # run update and install necessary packages
 RUN apt-get update -y && apt-get install -y \
