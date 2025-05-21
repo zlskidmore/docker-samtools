@@ -1,10 +1,10 @@
 # work from latest LTS ubuntu release
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 # set the environment variables
-ENV samtools_version 1.15.1
-ENV bcftools_version 1.15.1
-ENV htslib_version 1.15.1
+ENV samtools_version=1.21
+ENV bcftools_version=1.21
+ENV htslib_version=1.21
 
 # run update and install necessary packages
 RUN apt-get update -y && apt-get install -y \
